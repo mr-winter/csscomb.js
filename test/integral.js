@@ -7,7 +7,7 @@ describe('integral test', function() {
     var comb;
     it('Process result must be equal to expect.css', function(done) {
         comb = new Comb();
-        comb.configure(require('../.csscomb.json'));
+        comb.configure(require('../config/csscomb.json'));
         vow.all(['origin', 'expect'].map(function(type) {
             var fileName = './test/integral.' + type + '.css';
             return vfs.read(fileName, 'utf8').then(function(data) {
