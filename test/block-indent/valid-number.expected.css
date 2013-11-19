@@ -1,0 +1,8 @@
+a
+{ color: red 
+}
+@media all {
+   .input__control
+   { color: #000;
+   }
+}
